@@ -19,3 +19,7 @@ strong {
     color: blue;
     font-size: 25px;
 }
+
+.navbar {
+    background-color: rgb(42, 95, 165) !important;
+}
