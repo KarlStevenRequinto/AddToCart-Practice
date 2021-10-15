@@ -1,0 +1,38 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a href="#">
+                <img src="../../../assets/images/ogre magi sample.png" alt="where are you?">
+                <h6>ogre sets</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="../../../assets/images/earth spirit sample.png" alt="where are you?">
+                <h6>earth spirit sets</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="../../../assets/images/shaman sample.png" alt="where are you?">
+                <h6>shaman sets</h6>
+            </a>
+        </div>
+        
+        
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor = "let item of productList">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="wheres the image">
+                <h5>{{item.title}}</h5>
+                <p><strong>Price: </strong>${{item.price}}</p>
+                <p><strong>{{item.description}}</strong></p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to Cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>
